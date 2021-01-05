@@ -67,9 +67,6 @@ Lee Robinson.
 
 [Try Yourself!](https://members-app.vercel.app/members)
 
-
-![](show-app.gif)
-
 ![](dashboard.png)
 
 
