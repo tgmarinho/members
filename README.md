@@ -1,14 +1,4 @@
-<h1 align="center">
-    <img alt="Members" title="#Members" src="./public/logo2.png" />
-</h1>
 
-<h1 align="center">
-   🙋 <a href="#"> MEMBERS </a>
-</h1>
-
-<h3 align="center">
-    Managing People (Members), CRUD with Dashboard
-</h3>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/tgmarinho/members?color=%2304D361">
@@ -27,29 +17,37 @@
    <a href="https://github.com/tgmarinho/members/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/tgmarinho/members?style=social">
   </a>
-
-  
 </p>
 
+---
+
+<h2 align="center">
+   🙋 <a href="https://members-app.vercel.app/"> MEMBERS </a>
+</h2>
+
+<h3 align="center">
+    Managing People (Members), CRUD with Dashboard
+</h3>
+
+---
 
 <p align="center">
  <a href="#about">About</a> •
  <a href="#features">Features</a> •
  <a href="#layout">Layout</a> • 
- <a href="#how-it-works">How it works</a> • 
+ <a href="#how-to-run">How to run</a> • 
  <a href="#tech-stack">Tech Stack</a> • 
- <a href="#contributors">Contributors</a> • 
  <a href="#author">Author</a> • 
  <a href="#user-content-license">License</a>
-
 </p>
 
+---
 
 ## About
 
-♻️ Members - is a project just for learning bleeding edge full stack serveless project with NextJS, Hasura, GraphQL, Apollo, Postgres, JavaScript.
+🚀 Members - is a project only to practice building bleeding-edge Full Stack Serverless project with NextJS, Hasura, GraphQL, Apollo, Postgres, JavaScript.
 
-Project inspired and forked from [Daydrink](https://github.com/leerob/daydrink/). Thanks 
+A project inspired and forked from [Daydrink](https://github.com/leerob/daydrink/). Thanks 
 Lee Robinson.
 
 ---
@@ -67,41 +65,20 @@ Lee Robinson.
 
 ## Layout
 
+[Try Yourself!](https://members-app.vercel.app/members)
 
 
-[](./show-app.gif)
+![](show-app.gif)
+
+![](dashboard.png)
 
 
+---
+
+## How to run
 
 
-#### How to run
-
-```bash
-
-# Clone this repository
-$ git clone git@github.com:tgmarinho/members.git
-
-# Access the project folder cmd/terminal
-$ cd members
-
-# go to the server folder
-$ cd members
-
-# install the dependencies
-$ yarn
-
-# Run the application in development mode
-$ npm run dev:server
-
-# The server will start at port: 3333 - go to http://localhost:3333
-
-```
-<p align="center">
-  <a href="https://github.com/tgmarinho/members/blob/master/Insomnia_API_Membersjson.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-</p>
-
-
-## Running Locally
+### Running Locally
 
 ```bash
 $ git clone https://github.com/tgmarinho/members.git
@@ -122,7 +99,9 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
 ```
 
-## Built Using
+---
+
+## Tech Stack
 
 -   [React](https://pt-br.reactjs.org/)
 -   [Next.js](https://nextjs.org/)
@@ -132,15 +111,6 @@ NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
 -   [Hasura](https://hasura.io/)
 -   [Prettier](https://prettier.io/)
 
-
-
-## How to contribute
-
-1. Fork the project.
-2. Create a new branch with your changes: `git checkout -b my-feature`
-3. Save your changes and create a commit message telling you what you did: `git commit -m" feature: My new feature "`
-4. Submit your changes: `git push origin my-feature`
-> If you have any questions check this [guide on how to contribute](./CONTRIBUTING.md)
 
 ---
 
