@@ -6,6 +6,7 @@ import {withEditMemberModal} from './AddMemberModalRef';
 import {FLIP_MEMBER_STATUS} from '../graphql/mutations';
 import {useMutation} from '@apollo/react-hooks';
 import {GET_MEMBERS_QUERY} from '../graphql/queries';
+import {useCallback} from 'react';
 
 const badgeColors = {
     Membro: 'blue',
@@ -46,6 +47,17 @@ const MemberCard = ({userId, id, name, cellphone, gender, status, birth, is_memb
             });
     };
 
+    const renderBirth = useCallback((birth) => {
+        try {
+            if (birth) {
+                const dateFormatted = format(parseISO(birth), 'dd/MM');
+                return dateFormatted;
+            }
+        } catch (error) {
+            return 'Aniversário não informado.';
+        }
+    }, []);
+
     return (
         <Box
             borderWidth="1px"
@@ -79,7 +91,7 @@ const MemberCard = ({userId, id, name, cellphone, gender, status, birth, is_memb
                                 🥳
                             </Text>
                             <Text fontSize="sm" fontWeight="semibold" lineHeight="short">
-                                {birth && format(parseISO(birth), 'dd/MM')}
+                                {renderBirth(birth)}
                             </Text>
                         </Box>
                     </Flex>

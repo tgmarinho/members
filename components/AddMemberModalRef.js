@@ -68,7 +68,7 @@ const MemberContent = ({register, errors, control, buttonLabel, loading, onClose
                 </FormControl>
                 <FormControl isInvalid={errors.birth && errors.birth.message}>
                     <FormLabel>Data de Nascimento</FormLabel>
-                    <Input name="birth" type="date" ref={register} pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" />
+                    <Input name="birth" type="date" ref={register} />
                     {/* <Input name="birth" type="text" ref={register} pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" /> */}
                     {/* <Controller
                         as={<CustomMaskedInput />}
