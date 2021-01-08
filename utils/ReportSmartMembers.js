@@ -23,6 +23,18 @@ const titlesDefault = [
     {title: 'Membro desde', dataKey: 'member_at'},
 ];
 
+const formatDate = (date) => {
+    try {
+        if (date) {
+            const dateFormatted = format(parseISO(date), 'dd/MM/yyyy');
+            return dateFormatted;
+        }
+    } catch (error) {
+        return 'Ops! Data inválida';
+    }
+    return '';
+};
+
 const getFields = (state) =>
     Object.entries(state)
         .filter((item) => item[1])
@@ -39,8 +51,8 @@ const populateRows = (members) =>
             email: member.email,
             address: member.address,
             obs: member.obs,
-            birth: member.birth && format(parseISO(member.birth), 'dd/MM/yyyy'),
-            member_at: member.member_at && format(parseISO(member.member_at), 'dd/MM/yyyy'),
+            birth: formatDate(member.birth),
+            member_at: formatDate(member.member_at),
             is_member_or_assist: member.is_member_or_assist,
             gender: member.gender,
         }));
