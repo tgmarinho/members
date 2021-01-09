@@ -22,6 +22,7 @@ class MyDocument extends Document {
                     <meta title="Members | Gerenciador de Membros." />
                     <link rel="icon" sizes="96x96" href="/favicons/favicon.ico" />
                     <meta name="theme-color" content="#319795"></meta>
+                    <link rel="manifest" href="/manifest.json" />
                     <link href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css" rel="stylesheet" />
                 </Head>
                 <body>

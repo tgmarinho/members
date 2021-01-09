@@ -1,0 +1,21 @@
+{
+  "name": "Members",
+  "short_name": "Members",
+  "icons": [
+    {
+      "src": "/img/logo2.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#06092B",
+  "description": "App de Gerenciamento de Membros!",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#06092B"
+}

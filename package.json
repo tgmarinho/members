@@ -2,9 +2,9 @@
     "name": "members-app",
     "private": true,
     "scripts": {
-        "dev": "next dev",
+        "dev": "NODE_ENV='development' next dev",
         "build": "next build",
-        "start": "next start",
+        "start": "NODE_ENV='production' next start",
         "test": "jest"
     },
     "dependencies": {
@@ -29,6 +29,7 @@
         "jspdf": "^1.5.3",
         "jspdf-autotable": "^3.0.10",
         "next": "10.0.3",
+        "next-pwa": "^5.0.2",
         "next-seo": "4.17.0",
         "query-string": "^6.13.7",
         "react": "^17.0.1",
