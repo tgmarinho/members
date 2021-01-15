@@ -29,7 +29,7 @@ const MemberCard = ({userId, id, name, cellphone, gender, status, birth, is_memb
                 const name = data?.update_members?.returning[0]?.name;
                 toast({
                     title: 'Status do membro atualizado!',
-                    description: `Membro ${name} foi inativado.`,
+                    description: `Membro ${name} foi ${status ? 'ativado' : 'inativado'}.`,
                     status: 'success',
                     duration: 9000,
                     isClosable: true,
