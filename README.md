@@ -92,6 +92,8 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
 ```
 
+[Read about how to create table members and populate it.](https://github.com/tgmarinho/members/issues/2) 
+
 ---
 
 ## Tech Stack
