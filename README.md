@@ -1,86 +1,57 @@
+# Members
 
+A CRUD app to manage members and people, with a dashboard, backed by a GraphQL API on Hasura.
 
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/tgmarinho/members?color=%2304D361">
+**Live demo:** https://members-app.vercel.app/
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tgmarinho/members">
-
-  <a href="https://www.twitter.com/tgmarinho/">
-    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Ftgmarinho%2Fmembers">
-  </a>
-  
-  <a href="https://github.com/tgmarinho/members/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tgmarinho/members">
-  </a>
-   
+<p>
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+  <img alt="Apollo" src="https://img.shields.io/badge/Apollo-311C87?style=flat-square&logo=apollographql&logoColor=white">
+  <img alt="GraphQL" src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white">
+  <img alt="Hasura" src="https://img.shields.io/badge/Hasura-1EB4D4?style=flat-square&logo=hasura&logoColor=white">
+  <img alt="Chakra UI" src="https://img.shields.io/badge/Chakra%20UI-319795?style=flat-square&logo=chakraui&logoColor=white">
 </p>
 
----
+## What it does
 
-<h2 align="center">
-   🙋 <a href="https://members-app.vercel.app/"> MEMBERS </a>
-</h2>
+- Create, read, update, and delete members.
+- Mark members as active or inactive. Inactive members stay in the database.
+- List members by active and inactive status.
+- Show a dashboard with counts by active and inactive status, age, gender, and birthdays.
+- Generate a dynamic PDF report from selected fields.
 
-<h3 align="center">
-    Managing People (Members), CRUD with Dashboard
-</h3>
+## Stack
 
----
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Apollo Client](https://www.apollographql.com/docs/react/)
+- [GraphQL](https://graphql.org/)
+- [Hasura](https://hasura.io/)
+- [Chakra UI](https://chakra-ui.com/)
 
-<p align="center">
- <a href="#about">About</a> •
- <a href="#features">Features</a> •
- <a href="#layout">Layout</a> • 
- <a href="#how-to-run">How to run</a> • 
- <a href="#tech-stack">Tech Stack</a> • 
- <a href="#author">Author</a> • 
- <a href="#user-content-license">License</a>
-</p>
+The app reads and writes data through a GraphQL API served by Hasura.
 
----
+## Run locally
 
-## About
-
-🚀 Members - is a project only to practice building bleeding-edge Full Stack Serverless project with NextJS, Hasura, GraphQL, Apollo, Postgres, JavaScript.
-
-A project inspired and forked from [Daydrink](https://github.com/leerob/daydrink/). Thanks 
-Lee Robinson.
-
----
-
-## Features
-
-- [x] CRUD Members - Delete is active and inactive only (the data still storaged)
-- [x] List Members active and inactive
-- [x] Dashboard about how many active/inactive members, by age, gender, and birthdays.
-- [x] Report PDF dynamic by fields
-- [ ] Map with location of the members
-- [ ] Send Email/Notification when some members is birthday.
-
----
-
-## Layout
-
-[Try Yourself!](https://members-app.vercel.app/members)
-
-![](dashboard.png)
-
-
----
-
-## How to run
-
-
-### Running Locally
+This project uses yarn.
 
 ```bash
-$ git clone https://github.com/tgmarinho/members.git
-$ cd members
-$ yarn
-$ yarn dev
+git clone https://github.com/tgmarinho/members.git
+cd members
+yarn
+yarn dev
 ```
 
-To use Firebase Auth, you will need to run `vercel dev` and have a `.env` file similar to this.
+Other scripts:
+
+- `yarn build` builds the production app.
+- `yarn start` runs the production build.
+- `yarn test` runs the tests with Jest.
+
+## Environment
+
+The app uses Firebase for authentication. Create a `.env` file based on `.env.sample` and fill in your Firebase keys:
 
 ```
 NEXT_PUBLIC_FIREBASE_API_KEY=
@@ -92,41 +63,8 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
 ```
 
-[Read about how to create table members and populate it.](https://github.com/tgmarinho/members/issues/2) 
-
----
-
-## Tech Stack
-
--   [React](https://pt-br.reactjs.org/)
--   [Next.js](https://nextjs.org/)
--   [Vercel](https://vercel.com)
--   [Chakra UI](https://chakra-ui.com/)
--   [Apollo GraphQL](https://www.apollographql.com/docs/react/)
--   [Hasura](https://hasura.io/)
--   [Prettier](https://prettier.io/)
-
-
----
-
-## Author
-
-<a href="https://blog.rocketseat.com.br/author/thiago/">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt="Thiago Marinho"/>
- <br />
- <sub><b>Thiago Marinho</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago/" title="Rocketseat"></a>
- <br />
-
-[![Twitter Badge](https://img.shields.io/badge/-@tgmarinho-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/tgmarinho)](https://twitter.com/tgmarinho) [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
-
----
+The Hasura GraphQL endpoint is set in `graphql/apollo.js`. Change it there if you run your own Hasura instance.
 
 ## License
 
-This project is under the license [MIT](./LICENSE).
-
-Made with love by Thiago Marinho 👋🏽 [Get in Touch!](Https://www.linkedin.com/in/tgmarinho/)
-
-
-
+This project is under the [MIT](./LICENSE) license.
